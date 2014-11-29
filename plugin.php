@@ -8,6 +8,10 @@
  * Author URI: http://www.drmagu.com 
  **/
 namespace drmagu\wp_flatline;
+
+require_once (__DIR__.'/classes/VersionCheck.class.php');
+new \VersionCheck(__FILE__, '3.6', '5.3');
+		
 class WpFlatline {
 
 	public function __construct() {
@@ -15,7 +19,7 @@ class WpFlatline {
 		$this->init();
 	}
 	
-	public function init() {
+	private function init() {
 		add_action( 'init', [ $this, 'stop_heartbeat' ], 1);
 	}
 	
