@@ -1,6 +1,8 @@
 WP Flatline Plugin
 ==================
 
+version: 1.0.0
+
 When activated it stops the WordPress "heartbeat".
 
 To get background on why or when to do this, see here:
